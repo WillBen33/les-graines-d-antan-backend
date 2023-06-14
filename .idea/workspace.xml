@@ -4,16 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="853b50c9-8913-4da7-a623-2cd59f70d8cd" name="Changes" comment="implement jwt" />
+    <list default="true" id="853b50c9-8913-4da7-a623-2cd59f70d8cd" name="Changes" comment="Remove Maven xml files">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/address/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/address/AddressController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/address/AddressRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/address/AddressService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/category/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/category/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/category/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/category/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/product/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/product/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/product/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/product/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="implement_jwt" />
+        <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,13 +77,18 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "dev",
+    "git-widget-placeholder": "product-package",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "spring.configuration.checksum": "b43fdd98b1fd705ae4c3a10cf25aad8a"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RunManager">
@@ -93,7 +124,7 @@
       <option name="presentableId" value="Default" />
       <updated>1686645844620</updated>
       <workItem from="1686645847099" duration="3686000" />
-      <workItem from="1686651225349" duration="498000" />
+      <workItem from="1686651225349" duration="10087000" />
     </task>
     <task id="LOCAL-00001" summary="init project with pom.xml dependencies and db connexion configuration">
       <created>1686649102127</created>
@@ -109,7 +140,21 @@
       <option name="project" value="LOCAL" />
       <updated>1686650511642</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add Maven xml files">
+      <created>1686651794019</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686651794019</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Remove Maven xml files">
+      <created>1686651902441</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686651902441</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +175,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="init project with pom.xml dependencies and db connexion configuration" />
     <MESSAGE value="implement jwt" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement jwt" />
+    <MESSAGE value="Add Maven xml files" />
+    <MESSAGE value="Remove Maven xml files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove Maven xml files" />
   </component>
 </project>
