@@ -26,13 +26,13 @@ public class AuthService {
 
     public Map<String, String> register(RegisterRequest request, HttpServletRequest httpRequest) throws Exception {
 
-        if (!repository.findByEmail(request.getEmail()).isPresent()) {
+        if (repository.findByEmail(request.getEmail()).isEmpty()) {
             var user = User.builder()
                     .firstname(request.getFirstname())
                     .lastname(request.getLastname())
                     .email(request.getEmail())
                     .password(passwordEncoder.encode(request.getPassword()))
-                    .role(request.getRequiredRole())
+                    .role("ROLE_USER")
                     .build();
 
             repository.save(user);
@@ -70,7 +70,7 @@ public class AuthService {
 
             /* On extrait le rôle de l'utilisateur */
             Map<String, Object> extraClaims = new HashMap<>();
-            extraClaims.put("role", user.getRole().toString());
+            extraClaims.put("role", user.getRole());
 
             /* On génère le token avec le rôle */
             String jwtToken = jwtService.generateToken(new HashMap<>(extraClaims), user);

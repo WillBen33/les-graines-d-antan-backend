@@ -1,10 +1,8 @@
 package com.lgda.backend.user;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.lgda.backend.address.Address;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -29,12 +27,24 @@ public class User implements UserDetails {
     private String firstname;
     private String lastname;
     private String email;
+
     @JsonIgnore
     private String password;
+
+    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE} )
+//    @JoinColumn(name = "billingAddress")
+    private Address billingAddress;
+
+    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE} )
+//    @JoinColumn(name = "deliveryAddress")
+    private Address deliveryAddress;
+
+    private String phone;
 
     private String role;
 
     @Override
+    @JsonIgnore
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return List.of(new SimpleGrantedAuthority(role));
     }
@@ -45,21 +55,25 @@ public class User implements UserDetails {
     }
 
     @Override
+    @JsonIgnore
     public boolean isAccountNonExpired() {
         return true;
     }
 
     @Override
+    @JsonIgnore
     public boolean isAccountNonLocked() {
         return true;
     }
 
     @Override
+    @JsonIgnore
     public boolean isCredentialsNonExpired() {
         return true;
     }
 
     @Override
+    @JsonIgnore
     public boolean isEnabled() {
         return true;
     }
