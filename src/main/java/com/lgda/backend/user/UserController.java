@@ -18,6 +18,8 @@ import java.util.List;
 public class UserController {
 
     private final UserRepository userRepository;
+    private final UserService userService;
+
 
     @GetMapping("/email/{email}")
     public ResponseEntity<User> getUserByEmail(@PathVariable String email, HttpServletRequest request) throws AccessDeniedException {
@@ -32,9 +34,11 @@ public class UserController {
             request.setAttribute("access_denied", "You do not have suffisant rights to access to this resource");
             throw new AccessDeniedException("User does not have the correct rights to access to this resource");
         }
+    }
 
-
-
+    @GetMapping("/{id}")
+    public User getById(@PathVariable("id") Long id) {
+        return userService.getById(id);
     }
 
     @GetMapping("/all")
