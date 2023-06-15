@@ -1,10 +1,8 @@
 package com.lgda.backend.user;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.lgda.backend.address.Address;
+import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.Hibernate;
 import org.springframework.security.core.GrantedAuthority;
@@ -33,6 +31,12 @@ public class User implements UserDetails {
 
     @JsonIgnore
     private String password;
+
+    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    private Address billingAddress;
+
+    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    private Address deliveryAddress;
 
     private String role;
 

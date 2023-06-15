@@ -26,8 +26,7 @@ public class AddressService {
     public Address update(Address address, Long id) {
         Address foundAddress = getById(id);
 
-        foundAddress.setNumber(address.getNumber());
-        foundAddress.setStreetName(address.getStreetName());
+        foundAddress.setAddress(address.getAddress());
         foundAddress.setZipcode(address.getZipcode());
         foundAddress.setCity(address.getCity());
 
