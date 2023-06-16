@@ -41,7 +41,11 @@ public class SecurityConfig {
                 .requestMatchers("/api/v1/auth/**").permitAll() /* n'importe qui a accès à cet url */
                 .requestMatchers("/api/v1/demo/users-only").hasAnyRole(Role.USER.name()) /* ROLE_USER */
                 .requestMatchers("/api/v1/demo/admin-only").hasAnyRole(Role.ADMIN.name()) /* ROLE_ADMIN */
-
+//                .requestMatchers("/categories").hasAnyRole(Role.ADMIN.name()) /* ROLE_ADMIN */
+                .requestMatchers("/categories").hasAnyRole(Role.ADMIN.name()) /* ROLE_ADMIN */
+                .requestMatchers("/products").hasAnyRole(Role.ADMIN.name()) /* ROLE_ADMIN */
+                .requestMatchers("/orders/**").hasAnyRole(Role.ADMIN.name(), Role.USER.name()) /* ROLE_ADMIN */
+//TODO: Ajouter les routes supplémentaires pour les CRUD
                 .anyRequest().authenticated()
                 .and()
                 .authenticationProvider(authenticationProvider)
