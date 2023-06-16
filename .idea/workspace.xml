@@ -4,10 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="853b50c9-8913-4da7-a623-2cd59f70d8cd" name="Changes" comment="Add get user by id">
+    <list default="true" id="853b50c9-8913-4da7-a623-2cd59f70d8cd" name="Changes" comment="Add authorisations endpoints for categories and products">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/backend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/category/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/category/Category.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/product/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/product/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/product/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/product/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/product/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/category/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/category/Category.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/product/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/product/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/product/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/product/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/product/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/product/ProductService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686821916148</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add authorisations endpoints for categories and products">
+      <created>1686901005061</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686901005061</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,6 +190,7 @@
     <MESSAGE value="Add Maven xml files" />
     <MESSAGE value="Remove Maven xml files" />
     <MESSAGE value="Add get user by id" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add get user by id" />
+    <MESSAGE value="Add authorisations endpoints for categories and products" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add authorisations endpoints for categories and products" />
   </component>
 </project>

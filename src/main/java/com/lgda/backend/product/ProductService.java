@@ -1,5 +1,6 @@
 package com.lgda.backend.product;
 
+import com.lgda.backend.category.CategoryRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -10,6 +11,7 @@ import java.util.List;
 public class ProductService {
 
     private final ProductRepository productRepository;
+    private final CategoryRepository categoryRepository;
 
     public List<Product> getAll() {
         return productRepository.findAll();

@@ -13,9 +13,7 @@ public class ProductController {
     private final ProductService productService;
 
     @GetMapping
-    public List<Product> getAll() {
-        return productService.getAll();
-    }
+    public List<Product> getAll() { return productService.getAll(); }
 
     @GetMapping("/{id}")
     public Product getById(@PathVariable("id") Long id) {
@@ -23,9 +21,7 @@ public class ProductController {
     }
 
     @PostMapping
-    public Product add(@RequestBody Product product) {
-        return productService.add(product);
-    }
+    public Product add(@RequestBody Product product) { return productService.add(product); }
 
     @PutMapping("/{id}")
     public Product update(@RequestBody Product product, @PathVariable("id") Long id) {

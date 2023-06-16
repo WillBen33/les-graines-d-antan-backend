@@ -18,15 +18,17 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String name;
     private String description;
     private String thumbnail;
     private Boolean isDiscounted;
     private Boolean isAvailable;
-    private Float price;
-    private Float discountPercent;
+    private float price;
+    private float discountPercent;
 
-    @ManyToOne
-    @JsonIgnoreProperties("productList")
+    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH})
+    @JoinColumn(name = "category_id", referencedColumnName = "id")
     private Category category;
+
 }
