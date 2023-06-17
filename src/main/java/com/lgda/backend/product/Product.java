@@ -1,13 +1,14 @@
 package com.lgda.backend.product;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.lgda.backend.category.Category;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
+import org.hibernate.Hibernate;
 
+import java.util.Objects;
+
+@ToString
+@Table
 @Entity
 @Getter
 @Setter
@@ -27,8 +28,20 @@ public class Product {
     private float price;
     private float discountPercent;
 
-    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH})
-    @JoinColumn(name = "category_id", referencedColumnName = "id")
+    @ManyToOne
+    @JoinColumn(name = "category_id")
     private Category category;
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) return false;
+        Product product = (Product) o;
+        return getId() != null && Objects.equals(getId(), product.getId());
+    }
+
+    @Override
+    public int hashCode() {
+        return getClass().hashCode();
+    }
 }

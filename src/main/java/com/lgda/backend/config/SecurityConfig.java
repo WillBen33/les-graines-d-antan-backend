@@ -43,13 +43,11 @@ public class SecurityConfig {
                 .requestMatchers("/products/**").hasAnyRole(Role.ADMIN.name()) /* ROLE_ADMIN */
                 .requestMatchers("/categories/**").hasAnyRole(Role.ADMIN.name()) /* ROLE_ADMIN */
                 .requestMatchers("/orders/**").hasAnyRole(Role.ADMIN.name(), Role.USER.name()) /* ROLE_ADMIN */
-//TODO: Ajouter les routes supplémentaires pour les CRUD
                 .anyRequest().authenticated()
                 .and()
                 .authenticationProvider(authenticationProvider)
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
 
             return http.build();
-
     }
 }

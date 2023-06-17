@@ -3,13 +3,15 @@ package com.lgda.backend.category;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.lgda.backend.product.Product;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
+import org.hibernate.Hibernate;
 
-import java.util.List;
+import java.util.HashSet;
+import java.util.Objects;
+import java.util.Set;
 
+@ToString
+@Table
 @Entity
 @Getter
 @Setter
@@ -22,9 +24,22 @@ public class Category {
     private Long id;
     private String name;
 
-    @OneToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
-    @JoinColumn(name = "product_id", referencedColumnName = "id")
+    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL, orphanRemoval = true)
     @JsonIgnore
-    private List<Product> products;
+    @ToString.Exclude
+    private Set<Product> products = new HashSet<>();
 
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) return false;
+        Category category = (Category) o;
+        return getId() != null && Objects.equals(getId(), category.getId());
+    }
+
+    @Override
+    public int hashCode() {
+        return getClass().hashCode();
+    }
 }

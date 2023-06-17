@@ -4,20 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="853b50c9-8913-4da7-a623-2cd59f70d8cd" name="Changes" comment="Add authorisations endpoints for categories and products">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="853b50c9-8913-4da7-a623-2cd59f70d8cd" name="Changes" comment="fix crud product and category">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/backend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/address/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/address/Address.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/category/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/category/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/category/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/category/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/config/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/config/ApplicationConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/product/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/product/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/product/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/product/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/product/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/util/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/util/JwtService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/category/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/category/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/category/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/category/CategoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/config/ApplicationConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/config/ApplicationConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/product/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/product/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/product/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/product/ProductController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/product/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/product/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/user/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/user/User$UserBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/user/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/user/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/util/JwtService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/util/JwtService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.lgda.backend.BackendApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.lgda.backend.BackendApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.lgda.backend.BackendApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.lgda.backend.BackendApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,32 +75,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "dev",
-    "last_opened_file_path": "/Users/wilfridbenoit/Documents/workspace/les-graines-d-antan/les-graines-d-antan-backend",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "dev.gabrielchl.intellijpets.settings.AppSettingsConfigurable",
-    "spring.configuration.checksum": "b43fdd98b1fd705ae4c3a10cf25aad8a"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;SQL Inserts&quot;,
+    &quot;database.data.extractors.current.id&quot;: &quot;SQL Inserts&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;import_schema_mapping&quot;: &quot;&lt;schema-mapping&gt;\n  &lt;databases&gt;\n    &lt;list&gt;\n      &lt;schema-mapping-item&gt;\n        &lt;source-data-source-id&gt;4b410b65-b93c-448a-9345-114e54247c3f&lt;/source-data-source-id&gt;\n        &lt;source-path&gt;schema/&amp;quot;les_graines_d_antan&amp;quot;&lt;/source-path&gt;\n        &lt;target-data-source-id&gt;4b410b65-b93c-448a-9345-114e54247c3f&lt;/target-data-source-id&gt;\n        &lt;target-path&gt;schema/&amp;quot;les_graines_d_antan&amp;quot;&lt;/target-path&gt;\n      &lt;/schema-mapping-item&gt;\n    &lt;/list&gt;\n  &lt;/databases&gt;\n&lt;/schema-mapping&gt;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/wilfridbenoit/Documents/workspace/les-graines-d-antan/les-graines-d-antan-backend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;b43fdd98b1fd705ae4c3a10cf25aad8a&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <envs>
@@ -123,6 +140,9 @@
       <workItem from="1686645847099" duration="3686000" />
       <workItem from="1686651225349" duration="10087000" />
       <workItem from="1686817648555" duration="307000" />
+      <workItem from="1686983752351" duration="4693000" />
+      <workItem from="1686995867824" duration="1777000" />
+      <workItem from="1687004275589" duration="1160000" />
     </task>
     <task id="LOCAL-00001" summary="init project with pom.xml dependencies and db connexion configuration">
       <created>1686649102127</created>
@@ -166,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686901005061</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="try to add objects from front">
+      <created>1686928123559</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686928123559</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,7 +204,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/implement_jwt" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -191,6 +230,8 @@
     <MESSAGE value="Remove Maven xml files" />
     <MESSAGE value="Add get user by id" />
     <MESSAGE value="Add authorisations endpoints for categories and products" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add authorisations endpoints for categories and products" />
+    <MESSAGE value="try to add objects from front" />
+    <MESSAGE value="fix crud product and category" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix crud product and category" />
   </component>
 </project>

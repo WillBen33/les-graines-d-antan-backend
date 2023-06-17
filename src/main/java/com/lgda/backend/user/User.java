@@ -1,20 +1,23 @@
 package com.lgda.backend.user;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.lgda.backend.address.Address;
-import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import lombok.*;
+import org.hibernate.Hibernate;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 import java.util.List;
+import java.util.Objects;
 
-@Data
+@Getter
+@Setter
+@ToString
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
@@ -31,20 +34,9 @@ public class User implements UserDetails {
     @JsonIgnore
     private String password;
 
-    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE} )
-//    @JoinColumn(name = "billingAddress")
-    private Address billingAddress;
-
-    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE} )
-//    @JoinColumn(name = "deliveryAddress")
-    private Address deliveryAddress;
-
-    private String phone;
-
     private String role;
 
     @Override
-    @JsonIgnore
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return List.of(new SimpleGrantedAuthority(role));
     }
@@ -55,26 +47,35 @@ public class User implements UserDetails {
     }
 
     @Override
-    @JsonIgnore
     public boolean isAccountNonExpired() {
         return true;
     }
 
     @Override
-    @JsonIgnore
     public boolean isAccountNonLocked() {
         return true;
     }
 
     @Override
-    @JsonIgnore
     public boolean isCredentialsNonExpired() {
         return true;
     }
 
     @Override
-    @JsonIgnore
     public boolean isEnabled() {
         return true;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) return false;
+        User user = (User) o;
+        return getId() != null && Objects.equals(getId(), user.getId());
+    }
+
+    @Override
+    public int hashCode() {
+        return getClass().hashCode();
     }
 }

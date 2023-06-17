@@ -35,33 +35,20 @@ public class JwtService {
 
     /* Extrait toutes les claims. Même si je ne veux que le "username", je dois toutes les extraire */
     private Claims extractAllClaims(String token) {
-        return Jwts
-                .parserBuilder()
-                .setSigningKey(getSignInKey())
-                .build()
-                .parseClaimsJws(token)
-                .getBody();
+        return Jwts.parserBuilder().setSigningKey(getSignInKey()).build().parseClaimsJws(token).getBody();
     }
 
     /* Map<String, Object> contains all our Claims that we want to add to our Token */
     /* The subject is my userName or my userEmail contained in userDetails*/
     /* Event if we use useremail for storing a unique user in DB, for Spring Framework, it will be named "userEmail" */
     public String generateToken(Map<String, Object> extraClaims, UserDetails userDetails) {
-        return Jwts
-                .builder()
-                .setClaims(extraClaims)
-                .setSubject(userDetails.getUsername()) /* On utilise "getUsername" mais nous avons override pour dire que ça retourne l'email*/
-                .setIssuedAt(new Date(System.currentTimeMillis()))
-                .setExpiration(new Date(System.currentTimeMillis() + 60 * 60 * 1000 )) /* Valid for 15 sec */
-                .signWith(getSignInKey(), SignatureAlgorithm.HS256)
-                .compact(); /* Generate and return the token */
+        return Jwts.builder().setClaims(extraClaims).setSubject(userDetails.getUsername()) /* On utilise "getUsername" mais nous avons override pour dire que ça retourne l'email*/.setIssuedAt(new Date(System.currentTimeMillis())).setExpiration(new Date(System.currentTimeMillis() + 30L * 24 * 60 * 60 * 1000)) /* Valid for 30 days */.signWith(getSignInKey(), SignatureAlgorithm.HS256).compact(); /* Generate and return the token */
     }
 
     private Key getSignInKey() {
         byte[] keyBytes = Decoders.BASE64.decode(SECRET_KEY); /* Decode secret key */
         return Keys.hmacShaKeyFor(keyBytes); /* algorithm to decode our SECRET_KEY */
     }
-
 
     /* We need userDetails because we want to make sure that the token belongs to the right userDetails */
     public boolean isTokenValid(String token, UserDetails userDetails) {
@@ -77,10 +64,4 @@ public class JwtService {
         return extractClaim(token, Claims::getExpiration);
     }
 
-
-
 }
-
-
-
-
