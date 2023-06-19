@@ -42,7 +42,9 @@ public class SecurityConfig {
 //                .requestMatchers("/categories").hasAnyRole(Role.ADMIN.name()) /* ROLE_ADMIN */
                 .requestMatchers("/products/**").hasAnyRole(Role.ADMIN.name()) /* ROLE_ADMIN */
                 .requestMatchers("/categories/**").hasAnyRole(Role.ADMIN.name()) /* ROLE_ADMIN */
-                .requestMatchers("/orders/**").hasAnyRole(Role.ADMIN.name(), Role.USER.name()) /* ROLE_ADMIN */
+                //.requestMatchers("/orders/**").hasAnyRole(Role.ADMIN.name(), Role.USER.name()) /* ROLE_ADMIN */
+                .requestMatchers("/orders/**").permitAll()
+
                 .anyRequest().authenticated()
                 .and()
                 .authenticationProvider(authenticationProvider)

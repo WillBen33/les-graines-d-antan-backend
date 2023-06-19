@@ -31,28 +31,14 @@ public class OneOrder {
     private Integer totalCost;
     private OrderStatus orderStatus;
 
-    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
-    @JoinColumn(name = "delivery_address_id")
-    private Address deliveryAddress;
-
-    @Transient
-    private Long deliveryAddressId;
-
-    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
-    @JoinColumn(name = "billing_address_id")
-    private Address billingAddress;
-
-    @Transient
-    private Long billingAddressId;
-
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "oneOrder")
-    private Set<OrderProduct> orderProducts = new HashSet<>();
+    @OneToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, mappedBy = "oneOrder")
+    private Set<OrderProduct> orderProducts;
 
     @CreatedDate
     @Column(name = "created_date")
-    private Date createdAt;
+    private Date createdAt = new Date();
 
-    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+   /* @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     @JoinColumn(name = "user_id")
-    private User user;
+    private User user;*/
 }
