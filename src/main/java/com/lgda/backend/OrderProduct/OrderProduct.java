@@ -19,12 +19,7 @@ public class OrderProduct {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne
-    @JoinColumn(name = "one_order_id")
-    private OneOrder oneOrder;
-
-    @ManyToOne
-    @JoinColumn(name = "product_id")
+    @OneToOne
     private Product product;
 
     private Integer quantity;

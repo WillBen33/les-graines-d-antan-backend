@@ -63,7 +63,7 @@ public class OneOrderService {
         OneOrder foundOneOrder = getById(id);
 
         foundOneOrder.setOrderStatus(oneOrder.getOrderStatus());
-        foundOneOrder.setOrderProducts(oneOrder.getOrderProducts());
+        foundOneOrder.setOrderProductList(oneOrder.getOrderProductList());
         foundOneOrder.setCreatedAt(oneOrder.getCreatedAt());
         //foundOneOrder.setUser(oneOrder.getUser());
         foundOneOrder.setTotalCost(oneOrder.getTotalCost());

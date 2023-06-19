@@ -1,6 +1,8 @@
 package com.lgda.backend.OneOrder;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.lgda.backend.OrderProduct.OrderProduct;
 import com.lgda.backend.address.Address;
 import com.lgda.backend.product.Product;
@@ -22,23 +24,24 @@ import java.util.Set;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-
 public class OneOrder {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private Integer totalCost;
-    private OrderStatus orderStatus;
+    private String orderStatus;
 
-    @OneToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, mappedBy = "oneOrder")
-    private Set<OrderProduct> orderProducts;
+    @OneToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @JoinColumn(name="one_order_id", referencedColumnName = "id")
+    private Set<OrderProduct> orderProductList;
 
-    @CreatedDate
     @Column(name = "created_date")
     private Date createdAt = new Date();
 
-   /* @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @ManyToOne
     @JoinColumn(name = "user_id")
-    private User user;*/
+    @JsonIgnoreProperties("orderList")
+    private User user;
 }

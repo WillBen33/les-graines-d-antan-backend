@@ -38,12 +38,10 @@ public class SecurityConfig {
                 .and()
 
                 .authorizeHttpRequests()
-                .requestMatchers("/api/v1/auth/**").permitAll() /* n'importe qui a accès à cet url */
-//                .requestMatchers("/categories").hasAnyRole(Role.ADMIN.name()) /* ROLE_ADMIN */
-                .requestMatchers("/products/**").hasAnyRole(Role.ADMIN.name()) /* ROLE_ADMIN */
-                .requestMatchers("/categories/**").hasAnyRole(Role.ADMIN.name()) /* ROLE_ADMIN */
-                //.requestMatchers("/orders/**").hasAnyRole(Role.ADMIN.name(), Role.USER.name()) /* ROLE_ADMIN */
+                .requestMatchers("/api/v1/auth/**").permitAll()
                 .requestMatchers("/orders/**").permitAll()
+                .requestMatchers("/categories/**").permitAll()
+                .requestMatchers("/products/**").permitAll()
 
                 .anyRequest().authenticated()
                 .and()
