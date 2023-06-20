@@ -28,6 +28,7 @@ public class ProductService {
         Product foundProduct = getById(id);
 
         foundProduct.setName(product.getName());
+        foundProduct.setCategory(product.getCategory());
         foundProduct.setDescription(product.getDescription());
         foundProduct.setThumbnail(product.getThumbnail());
         foundProduct.setIsDiscounted(product.getIsDiscounted());

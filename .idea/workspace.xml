@@ -5,32 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="853b50c9-8913-4da7-a623-2cd59f70d8cd" name="Changes" comment="fix crud product and category">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/address/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/address/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/category/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/category/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/category/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/category/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/config/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/config/ApplicationConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/product/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/product/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/product/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/product/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/product/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/util/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/util/JwtService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/category/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/category/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/category/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/category/CategoryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/config/ApplicationConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/config/ApplicationConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/product/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/product/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/product/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/product/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/user/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/address/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/address/Address.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/product/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/product/ProductService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/user/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/user/User$UserBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/user/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/user/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/util/JwtService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/util/JwtService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.lgda.backend.BackendApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.lgda.backend.BackendApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.lgda.backend.BackendApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.lgda.backend.BackendApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +125,10 @@
       <workItem from="1686817648555" duration="307000" />
       <workItem from="1686983752351" duration="4693000" />
       <workItem from="1686995867824" duration="1777000" />
-      <workItem from="1687004275589" duration="1160000" />
+      <workItem from="1687004275589" duration="1700000" />
+      <workItem from="1687006043101" duration="9429000" />
+      <workItem from="1687179014760" duration="4174000" />
+      <workItem from="1687263659226" duration="3704000" />
     </task>
     <task id="LOCAL-00001" summary="init project with pom.xml dependencies and db connexion configuration">
       <created>1686649102127</created>
@@ -193,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686928123559</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix crud product and category">
+      <created>1687005750253</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1687005750253</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +203,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/implement_jwt" />
+                        <option value="dev" />
                       </list>
                     </value>
                   </entry>

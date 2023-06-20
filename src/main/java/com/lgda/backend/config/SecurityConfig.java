@@ -1,7 +1,6 @@
 package com.lgda.backend.config;
 
 import com.lgda.backend.filter.JwtAuthenticationFilter;
-import com.lgda.backend.user.Role;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -39,10 +38,10 @@ public class SecurityConfig {
 
                 .authorizeHttpRequests()
                 .requestMatchers("/api/v1/auth/**").permitAll() /* n'importe qui a accès à cet url */
-//                .requestMatchers("/categories").hasAnyRole(Role.ADMIN.name()) /* ROLE_ADMIN */
-                .requestMatchers("/products/**").hasAnyRole(Role.ADMIN.name()) /* ROLE_ADMIN */
-                .requestMatchers("/categories/**").hasAnyRole(Role.ADMIN.name()) /* ROLE_ADMIN */
-                .requestMatchers("/orders/**").hasAnyRole(Role.ADMIN.name(), Role.USER.name()) /* ROLE_ADMIN */
+                .requestMatchers("/products/**").permitAll() /* ROLE_ADMIN */
+                .requestMatchers("/categories/**").permitAll() /* ROLE_ADMIN */
+                .requestMatchers("/users/**").permitAll() /* ROLE_ADMIN */
+                .requestMatchers("/orders/**").permitAll() /* ROLE_ADMIN */
                 .anyRequest().authenticated()
                 .and()
                 .authenticationProvider(authenticationProvider)

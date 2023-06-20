@@ -5,10 +5,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -19,7 +16,6 @@ public class UserController {
 
     private final UserRepository userRepository;
     private final UserService userService;
-
 
     @GetMapping("/email/{email}")
     public ResponseEntity<User> getUserByEmail(@PathVariable String email, HttpServletRequest request) throws AccessDeniedException {
@@ -49,7 +45,15 @@ public class UserController {
         } else {
             request.setAttribute("access_denied", "You do not have suffisant rights to access to this resource");
             throw new AccessDeniedException("User does not have the correct rights to access to this resource");
-
         }
     }
+
+    @PutMapping("/{id}")
+    public User update(@RequestBody User user, @PathVariable("id") Long id) {
+        return  userService.update(user, id);
+    }
+
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable("id") Long id) { userService.delete(id);}
+
 }
