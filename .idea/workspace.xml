@@ -9,6 +9,13 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/user/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/user/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/user/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/user/UserService.class" afterDir="false" />
     </list>
+    <list default="true" id="853b50c9-8913-4da7-a623-2cd59f70d8cd" name="Changes" comment="Add authorisations endpoints for categories and products">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/OrderProduct/OrderProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/OrderProduct/OrderProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/OrderProduct/OrderProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/OrderProduct/OrderProduct.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +89,25 @@
     ]
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.BackendApplication">
+    <configuration name="BackendApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="MYSQL_USERNAME" value="root" />
+        <env name="MYSQL_PASSWORD" value="MylisSql1234!" />
+        <env name="JWT_SECRET_KEY" value="753778214125442A472D4B6150645367566B59703373367639792F423F452848" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="com.lgda.backend.BackendApplication" />
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lgda.backend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <envs>
         <env name="MYSQL_USERNAME" value="root" />
@@ -105,6 +130,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.BackendApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.BackendApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -227,5 +260,15 @@
     <MESSAGE value="try to add objects from front" />
     <MESSAGE value="fix crud product and category" />
     <option name="LAST_COMMIT_MESSAGE" value="fix crud product and category" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.sql.SQLException" package="java.sql" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
