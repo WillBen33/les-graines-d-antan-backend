@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="853b50c9-8913-4da7-a623-2cd59f70d8cd" name="Changes" comment="fix crud product and category">
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/user/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/user/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/user/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/user/UserService.class" afterDir="false" />
-    </list>
-    <list default="true" id="853b50c9-8913-4da7-a623-2cd59f70d8cd" name="Changes" comment="Add authorisations endpoints for categories and products">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/OrderProduct/OrderProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/OrderProduct/OrderProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/OrderProduct/OrderProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/OrderProduct/OrderProduct.class" afterDir="false" />
-    </list>
+    <list default="true" id="f438ccce-aa40-4e1d-b389-a46da06303d6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +13,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -37,9 +25,6 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JpbToolWindowState">
-    <option name="isToolWindowVisible" value="false" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -50,50 +35,30 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2R8y8fQF8uZ5iT8O1xgdJJW2mUx" />
+  <component name="ProjectId" id="2RYEBehpoMn47PZKU3Mh5SfAkKn" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
-    <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "database.data.extractors.current.export.id": "SQL Inserts",
-    "database.data.extractors.current.id": "SQL Inserts",
-    "git-widget-placeholder": "dev-fix-crud",
-    "import_schema_mapping": "<schema-mapping>\n  <databases>\n    <list>\n      <schema-mapping-item>\n        <source-data-source-id>4b410b65-b93c-448a-9345-114e54247c3f</source-data-source-id>\n        <source-path>schema/&quot;les_graines_d_antan&quot;</source-path>\n        <target-data-source-id>4b410b65-b93c-448a-9345-114e54247c3f</target-data-source-id>\n        <target-path>schema/&quot;les_graines_d_antan&quot;</target-path>\n      </schema-mapping-item>\n    </list>\n  </databases>\n</schema-mapping>",
-    "last_opened_file_path": "/Users/wilfridbenoit/Documents/workspace/les-graines-d-antan/les-graines-d-antan-backend",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "b43fdd98b1fd705ae4c3a10cf25aad8a"
-  },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
-    ]
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.BackendApplication">
+  <component name="RunManager">
     <configuration name="BackendApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="$USER_HOME$/.jdks/temurin-17.0.7" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <envs>
-        <env name="MYSQL_USERNAME" value="root" />
-        <env name="MYSQL_PASSWORD" value="MylisSql1234!" />
+        <env name="MYSQL_USERNAME" value="pj" />
+        <env name="MYSQL_PASSWORD" value="Azerty123$" />
         <env name="JWT_SECRET_KEY" value="753778214125442A472D4B6150645367566B59703373367639792F423F452848" />
       </envs>
       <option name="MAIN_CLASS_NAME" value="com.lgda.backend.BackendApplication" />
@@ -108,31 +73,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <envs>
-        <env name="MYSQL_USERNAME" value="root" />
-        <env name="MYSQL_PASSWORD" value="12345678" />
-        <env name="JWT_SECRET_KEY" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQSflKxwRJSMeKKF2QT4fwpMeJf36POk6yJVadQssw5c" />
-      </envs>
-      <module name="backend" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lgda.backend.BackendApplication" />
-      <extension name="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
-        <option name="IS_SUBST" value="false" />
-        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
-        <option name="IS_IGNORE_MISSING_FILES" value="false" />
-        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
-        </ENTRIES>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.BackendApplication" />
-    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.BackendApplication" />
@@ -142,89 +82,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="853b50c9-8913-4da7-a623-2cd59f70d8cd" name="Changes" comment="" />
-      <created>1686645844620</created>
+      <changelist id="f438ccce-aa40-4e1d-b389-a46da06303d6" name="Changes" comment="" />
+      <created>1687418479483</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1686645844620</updated>
-      <workItem from="1686645847099" duration="3686000" />
-      <workItem from="1686651225349" duration="10087000" />
-      <workItem from="1686817648555" duration="307000" />
-      <workItem from="1686983752351" duration="4693000" />
-      <workItem from="1686995867824" duration="1777000" />
-      <workItem from="1687004275589" duration="1700000" />
-      <workItem from="1687006043101" duration="9429000" />
-      <workItem from="1687179014760" duration="4174000" />
-      <workItem from="1687263659226" duration="4559000" />
+      <updated>1687418479483</updated>
     </task>
-    <task id="LOCAL-00001" summary="init project with pom.xml dependencies and db connexion configuration">
-      <created>1686649102127</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1686649102127</updated>
-    </task>
-    <task id="LOCAL-00002" summary="implement jwt">
-      <created>1686650511642</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1686650511642</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Add Maven xml files">
-      <created>1686651794019</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1686651794019</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Remove Maven xml files">
-      <created>1686651902441</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1686651902441</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Add get user by id">
-      <created>1686821916148</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1686821916148</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Add authorisations endpoints for categories and products">
-      <created>1686901005061</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1686901005061</updated>
-    </task>
-    <task id="LOCAL-00007" summary="try to add objects from front">
-      <created>1686928123559</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1686928123559</updated>
-    </task>
-    <task id="LOCAL-00008" summary="fix crud product and category">
-      <created>1687005750253</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1687005750253</updated>
-    </task>
-    <task id="LOCAL-00009" summary="fix crud product and category">
-      <created>1687293222070</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1687293222070</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -237,7 +101,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="dev" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -248,27 +112,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="init project with pom.xml dependencies and db connexion configuration" />
-    <MESSAGE value="implement jwt" />
-    <MESSAGE value="Add Maven xml files" />
-    <MESSAGE value="Remove Maven xml files" />
-    <MESSAGE value="Add get user by id" />
-    <MESSAGE value="Add authorisations endpoints for categories and products" />
-    <MESSAGE value="try to add objects from front" />
-    <MESSAGE value="fix crud product and category" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix crud product and category" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.sql.SQLException" package="java.sql" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
