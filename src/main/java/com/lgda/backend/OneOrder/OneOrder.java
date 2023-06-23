@@ -1,7 +1,9 @@
 package com.lgda.backend.OneOrder;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.lgda.backend.OrderProduct.OrderProduct;
+
 import com.lgda.backend.user.User;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

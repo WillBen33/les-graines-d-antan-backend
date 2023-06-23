@@ -36,4 +36,29 @@ public class OneOrderController {
         oneOrderService.delete(id);
     }
 
+    @GetMapping("/top-product-quantities")
+    public List<Object> getTopProductQuantitiesByMonth() {
+        return oneOrderService.findTopProductQuantitiesByMonth();
+    }
+
+    @GetMapping("/worse-product-quantities")
+    public List<Object> getWorseProductQuantitiesByMonth() {
+        return oneOrderService.findWorseProductQuantitiesByMonth();
+    }
+
+    @GetMapping("/total-sales-month")
+    public Integer findTotalCostSumByCurrentMonth() {
+        return oneOrderService.findTotalCostSumByCurrentMonth();
+    }
+
+    @GetMapping("/total-orders-month")
+    public long findCurrentMonthOrderCount() {
+        return oneOrderService.findCurrentMonthOrderCount();
+    }
+
+    @GetMapping("/total-orders-week")
+    public long findCurrentWeekOrderCount() {
+        return oneOrderService.findCurrentWeekOrderCount();
+    }
+
 }

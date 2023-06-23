@@ -1,5 +1,7 @@
 package com.lgda.backend.OneOrder;
 
+import com.lgda.backend.OrderProduct.OrderProductRepository;
+import com.lgda.backend.address.AddressRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -21,19 +23,38 @@ public class OneOrderService {
     }
 
     public OneOrder add(OneOrder oneOrder) {
-        OneOrder newOneOrder = oneOrderRepository.save(oneOrder);
-                return newOneOrder;
+       return oneOrderRepository.save(oneOrder);
     }
 
     public OneOrder update(OneOrder oneOrder, Long id) {
         OneOrder foundOneOrder = getById(id);
-
         foundOneOrder.setOrderStatus(oneOrder.getOrderStatus());
         foundOneOrder.setOrderProductList(oneOrder.getOrderProductList());
         foundOneOrder.setCreatedAt(oneOrder.getCreatedAt());
         foundOneOrder.setTotalCost(oneOrder.getTotalCost());
 
+
         return oneOrderRepository.save(foundOneOrder);
+    }
+
+    public List<Object> findTopProductQuantitiesByMonth() {
+        return oneOrderRepository.findTopProductQuantitiesByMonth();
+    }
+
+    public List<Object> findWorseProductQuantitiesByMonth() {
+        return oneOrderRepository.findWorseProductQuantitiesByMonth();
+    }
+
+    public Integer findTotalCostSumByCurrentMonth() {
+        return oneOrderRepository.findTotalCostSumByCurrentMonth();
+    }
+
+    public long findCurrentMonthOrderCount() {
+        return oneOrderRepository.findCurrentMonthOrderCount();
+    }
+
+    public long findCurrentWeekOrderCount() {
+        return oneOrderRepository.findCurrentWeekOrderCount();
     }
 
     public void delete(Long id) {

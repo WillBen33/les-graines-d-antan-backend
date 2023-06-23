@@ -21,6 +21,7 @@ public class Product {
     private Long id;
 
     private String name;
+    @Column(length = 500)
     private String description;
     private String thumbnail;
     private Boolean isDiscounted;
