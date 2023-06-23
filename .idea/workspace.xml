@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="853b50c9-8913-4da7-a623-2cd59f70d8cd" name="Changes" comment="fix crud product and category">
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/user/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/user/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/user/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/user/UserService.class" afterDir="false" />
-    </list>
-    <list default="true" id="853b50c9-8913-4da7-a623-2cd59f70d8cd" name="Changes" comment="Add authorisations endpoints for categories and products">
+    <list default="true" id="853b50c9-8913-4da7-a623-2cd59f70d8cd" name="Changes" comment="fix orders">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/OrderProduct/OrderProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/OrderProduct/OrderProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/OrderProduct/OrderProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/OrderProduct/OrderProduct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/demo/DemoController.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="ordersCart" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,6 +55,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -73,7 +67,8 @@
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "database.data.extractors.current.export.id": "SQL Inserts",
     "database.data.extractors.current.id": "SQL Inserts",
-    "git-widget-placeholder": "dev-fix-crud",
+    "git-widget-placeholder": "dev",
+    "ignore_missing_gitignore": "true",
     "import_schema_mapping": "<schema-mapping>\n  <databases>\n    <list>\n      <schema-mapping-item>\n        <source-data-source-id>4b410b65-b93c-448a-9345-114e54247c3f</source-data-source-id>\n        <source-path>schema/&quot;les_graines_d_antan&quot;</source-path>\n        <target-data-source-id>4b410b65-b93c-448a-9345-114e54247c3f</target-data-source-id>\n        <target-path>schema/&quot;les_graines_d_antan&quot;</target-path>\n      </schema-mapping-item>\n    </list>\n  </databases>\n</schema-mapping>",
     "last_opened_file_path": "/Users/wilfridbenoit/Documents/workspace/les-graines-d-antan/les-graines-d-antan-backend",
     "node.js.detected.package.eslint": "true",
@@ -93,7 +88,7 @@
     <configuration name="BackendApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <envs>
         <env name="MYSQL_USERNAME" value="root" />
-        <env name="MYSQL_PASSWORD" value="MylisSql1234!" />
+        <env name="MYSQL_PASSWORD" value="12345678" />
         <env name="JWT_SECRET_KEY" value="753778214125442A472D4B6150645367566B59703373367639792F423F452848" />
       </envs>
       <option name="MAIN_CLASS_NAME" value="com.lgda.backend.BackendApplication" />
@@ -103,6 +98,16 @@
           <option name="PATTERN" value="com.lgda.backend.*" />
           <option name="ENABLED" value="true" />
         </pattern>
+      </extension>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
@@ -132,9 +137,11 @@
     </configuration>
     <list>
       <item itemvalue="Application.BackendApplication" />
+      <item itemvalue="Spring Boot.BackendApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BackendApplication" />
         <item itemvalue="Application.BackendApplication" />
       </list>
     </recent_temporary>
