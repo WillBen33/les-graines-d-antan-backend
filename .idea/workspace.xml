@@ -6,10 +6,24 @@
   <component name="ChangeListManager">
     <list default="true" id="853b50c9-8913-4da7-a623-2cd59f70d8cd" name="Changes" comment="Add authorisations endpoints for categories and products">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/OneOrder/OneOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/OneOrder/OneOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/OneOrder/OneOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/OneOrder/OneOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/OneOrder/OneOrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/OneOrder/OneOrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/OneOrder/OneOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/OneOrder/OneOrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/OrderProduct/OrderProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/OrderProduct/OrderProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/OrderProduct/OrderProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/OrderProduct/OrderProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lgda/backend/product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lgda/backend/product/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/OneOrder/OneOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/OneOrder/OneOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/OneOrder/OneOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/OneOrder/OneOrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/OneOrder/OneOrderRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/OneOrder/OneOrderRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/OneOrder/OneOrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/OneOrder/OneOrderService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/OrderProduct/OrderProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/OrderProduct/OrderProduct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/OrderProduct/OrderProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/OrderProduct/OrderProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/product/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/product/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/user/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/user/User$UserBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/user/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/user/User.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

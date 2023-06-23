@@ -1,6 +1,5 @@
 package com.lgda.backend.OneOrder;
 
-import com.lgda.backend.OrderProduct.OrderProduct;
 import com.lgda.backend.OrderProduct.OrderProductRepository;
 import com.lgda.backend.address.AddressRepository;
 import lombok.RequiredArgsConstructor;
@@ -26,49 +25,40 @@ public class OneOrderService {
                 new RuntimeException(id + "not found"));
     }
 
-  /*  public OneOrder add(OneOrder oneOrder) {
-        return this.createOneOrder(oneOrder);
-    }*/
-
 
     public OneOrder add(OneOrder oneOrder) {
-        OneOrder newOneOrder = oneOrderRepository.save(oneOrder);
-                return newOneOrder;
+       return oneOrderRepository.save(oneOrder);
     }
-
-   /* public OneOrder createOneOrder(OneOrder oneOrder) {
-        System.out.println("-----------create one order -----------");
-        System.out.println(oneOrder.getId());
-
-
-
-        // Save the OneOrder entity to the database
-
-        List<OrderProduct> orderProducts = oneOrder.getOrderProducts();
-
-        System.out.println("-----------create one order -----------");
-
-        OneOrder savedOrder = oneOrderRepository.save(oneOrder);
-        System.out.println(savedOrder.getId());
-        for (OrderProduct orderProduct : orderProducts) {
-            System.out.println(orderProduct.getQuantity());
-            orderProduct.setOneOrder(savedOrder);
-            orderProductRepository.save(orderProduct);
-        }
-
-        return savedOrder;
-    }*/
 
     public OneOrder update(OneOrder oneOrder, Long id) {
         OneOrder foundOneOrder = getById(id);
-
         foundOneOrder.setOrderStatus(oneOrder.getOrderStatus());
         foundOneOrder.setOrderProductList(oneOrder.getOrderProductList());
         foundOneOrder.setCreatedAt(oneOrder.getCreatedAt());
-        //foundOneOrder.setUser(oneOrder.getUser());
         foundOneOrder.setTotalCost(oneOrder.getTotalCost());
 
+
         return oneOrderRepository.save(foundOneOrder);
+    }
+
+    public List<Object> findTopProductQuantitiesByMonth() {
+        return oneOrderRepository.findTopProductQuantitiesByMonth();
+    }
+
+    public List<Object> findWorseProductQuantitiesByMonth() {
+        return oneOrderRepository.findWorseProductQuantitiesByMonth();
+    }
+
+    public Integer findTotalCostSumByCurrentMonth() {
+        return oneOrderRepository.findTotalCostSumByCurrentMonth();
+    }
+
+    public long findCurrentMonthOrderCount() {
+        return oneOrderRepository.findCurrentMonthOrderCount();
+    }
+
+    public long findCurrentWeekOrderCount() {
+        return oneOrderRepository.findCurrentWeekOrderCount();
     }
 
     public void delete(Long id) {
