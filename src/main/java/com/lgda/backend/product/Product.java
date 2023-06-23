@@ -8,7 +8,7 @@ import org.hibernate.Hibernate;
 import java.util.Objects;
 
 @ToString
-@Table
+@Table(name = "product")
 @Entity
 @Getter
 @Setter

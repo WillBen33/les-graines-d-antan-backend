@@ -1,6 +1,5 @@
 package com.lgda.backend.OrderProduct;
 
-import com.lgda.backend.OneOrder.OneOrder;
 import com.lgda.backend.product.Product;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -13,6 +12,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name = "order_product")
 public class OrderProduct {
 
     @Id

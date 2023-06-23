@@ -19,7 +19,9 @@ public class UserService {
         foundUser.setFirstname(user.getFirstname());
         foundUser.setLastname(user.getLastname());
         foundUser.setEmail(user.getEmail());
-        foundUser.setPassword(user.getPassword());
+        foundUser.setBillingAddress(user.getBillingAddress());
+        foundUser.setDeliveryAddress(user.getDeliveryAddress());
+        foundUser.setOrderList(user.getOrderList());
 
         return repository.save(foundUser);
     }

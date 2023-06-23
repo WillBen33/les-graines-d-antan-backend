@@ -1,22 +1,15 @@
 package com.lgda.backend.OneOrder;
 
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.lgda.backend.OrderProduct.OrderProduct;
-import com.lgda.backend.address.Address;
-import com.lgda.backend.product.Product;
 import com.lgda.backend.user.User;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.data.annotation.CreatedDate;
 
 import java.util.Date;
-import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -24,6 +17,7 @@ import java.util.Set;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name = "one_order")
 public class OneOrder {
 
     @Id
@@ -41,7 +35,7 @@ public class OneOrder {
     private Date createdAt = new Date();
 
     @ManyToOne
-    @JoinColumn(name = "user_id")
-    @JsonIgnoreProperties("orderList")
+    @JoinColumn(name = "user_id", referencedColumnName = "id")
+//    @JsonIgnoreProperties("orderList")
     private User user;
 }

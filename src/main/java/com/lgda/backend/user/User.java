@@ -1,7 +1,6 @@
 package com.lgda.backend.user;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.lgda.backend.OneOrder.OneOrder;
 import com.lgda.backend.address.Address;
 import jakarta.persistence.*;
@@ -20,6 +19,7 @@ import java.util.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@Table(name = "user")
 public class User implements UserDetails {
 
     @Id
@@ -33,16 +33,20 @@ public class User implements UserDetails {
     private String password;
 
     @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+//    @JoinColumn(name = "user_billingAddress_id", referencedColumnName = "id")
     private Address billingAddress;
 
     @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+//    @JoinColumn(name = "user_deliveryAddress_id", referencedColumnName = "id")
     private Address deliveryAddress;
 
     private String role;
 
     @OneToMany(cascade = CascadeType.REMOVE)
-    @JsonIgnoreProperties("user")
-    private Set<OneOrder> orderList = new HashSet<>();
+    @ToString.Exclude
+//    @JsonIgnoreProperties("user")
+//    @ToString.Exclude
+    private Set<OneOrder> orderList;
 
     @JsonIgnore
     @Override
