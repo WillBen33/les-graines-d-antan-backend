@@ -38,6 +38,7 @@ public class SecurityConfig {
 
                 .authorizeHttpRequests()
                 .requestMatchers("/api/v1/auth/**").permitAll() /* n'importe qui a accès à cet url */
+                .requestMatchers("/mail/**").permitAll()
                 .requestMatchers("/products/**").permitAll() /* ROLE_ADMIN */
                 .requestMatchers("/categories/**").permitAll() /* ROLE_ADMIN */
                 .requestMatchers("/users/**").permitAll() /* ROLE_ADMIN */
