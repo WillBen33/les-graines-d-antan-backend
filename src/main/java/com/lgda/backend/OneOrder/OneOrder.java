@@ -1,9 +1,7 @@
 package com.lgda.backend.OneOrder;
 
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.lgda.backend.OrderProduct.OrderProduct;
-
 import com.lgda.backend.user.User;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -38,6 +36,5 @@ public class OneOrder {
 
     @ManyToOne
     @JoinColumn(name = "user_id", referencedColumnName = "id")
-//    @JsonIgnoreProperties("orderList")
     private User user;
 }
