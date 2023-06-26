@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="853b50c9-8913-4da7-a623-2cd59f70d8cd" name="Changes" comment="fix orders">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/OneOrder/OneOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/OneOrder/OneOrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/OneOrder/OneOrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/OneOrder/OneOrderService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/product/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/product/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/user/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/user/User$UserBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lgda/backend/user/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lgda/backend/user/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,9 +94,9 @@
   <component name="RunManager" selected="Application.BackendApplication">
     <configuration name="BackendApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <envs>
-        <env name="MYSQL_USERNAME" value="root" />
-        <env name="MYSQL_PASSWORD" value="12345678" />
         <env name="JWT_SECRET_KEY" value="753778214125442A472D4B6150645367566B59703373367639792F423F452848" />
+        <env name="MYSQL_PASSWORD" value="Azerty123$" />
+        <env name="MYSQL_USERNAME" value="pj" />
       </envs>
       <option name="MAIN_CLASS_NAME" value="com.lgda.backend.BackendApplication" />
       <module name="backend" />
@@ -148,7 +144,6 @@
     </configuration>
     <list>
       <item itemvalue="Application.BackendApplication" />
-      <item itemvalue="Spring Boot.BackendApplication" />
     </list>
     <recent_temporary>
       <list>
