@@ -14,11 +14,11 @@ public class EmailService {
     private JavaMailSender emailSender;
 
     public Email add(Email email) {
-            SimpleMailMessage message = new SimpleMailMessage();
-            message.setTo(email.getTo());
-            message.setSubject(email.getSubject());
-            message.setText(email.getBody());
-            emailSender.send(message);
+        SimpleMailMessage message = new SimpleMailMessage();
+        message.setTo(email.getTo());
+        message.setSubject(email.getSubject());
+        message.setText(email.getBody());
+        emailSender.send(message);
 
         return email;
     }
